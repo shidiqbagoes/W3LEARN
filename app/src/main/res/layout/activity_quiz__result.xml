@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ececec"
+    android:layout_height="match_parent"
+    tools:context=".quiz.Quiz_Result">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="465dp"
+        android:orientation="vertical"
+        android:background="@drawable/gradient">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/subrushvec"/>
+
+        <ImageView
+            android:id="@+id/conveti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-468dp"
+            android:background="@drawable/brush" />
+
+        <TextView
+            android:id="@+id/tResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="-430dp"
+            android:fontFamily="@font/montserratmediumxml"
+            android:text="Result"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+            
+            <com.github.florent37.shapeofview.shapes.StarView
+                android:id="@+id/star1"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="-8dp"
+                >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffe600"/>
+            </com.github.florent37.shapeofview.shapes.StarView>
+            <com.github.florent37.shapeofview.shapes.StarView
+                android:id="@+id/star2"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="-8dp"
+               >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffe600"/>
+            </com.github.florent37.shapeofview.shapes.StarView>
+            <com.github.florent37.shapeofview.shapes.StarView
+                android:id="@+id/star3"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="28dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffe600"/>
+            </com.github.florent37.shapeofview.shapes.StarView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="Congratulations"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserratmediumxml"/>
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/montserratregulerxml"
+            android:text="This is The Record of yours"
+            android:textColor="#e0e0e0"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_height="265dp"
+        android:orientation="vertical"
+        android:layout_marginTop="-140dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bgquizbg"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/tsub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Knowledge was impressive"
+            android:textSize="14dp"
+            android:fontFamily="@font/montserratmediumxml"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/divide"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:background="#FF9100"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="65dp"
+        android:orientation="vertical">
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correct Answer"
+            android:fontFamily="@font/montserratlightxml"
+            android:textSize="12dp"/>
+
+          <TextView
+              android:id="@+id/r1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="4"
+              android:layout_marginLeft="167dp"
+              android:fontFamily="@font/montserratlightxml"
+              android:textSize="12dp"/>
+      </LinearLayout>
+        <ProgressBar
+             android:id="@+id/pb1"
+             android:layout_width="267dp"
+             android:layout_height="13dp"
+             style="?android:attr/progressBarStyleHorizontal"
+             android:max="10"
+             android:progress="8"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wrong Answer"
+                    android:fontFamily="@font/montserratlightxml"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:id="@+id/r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:layout_marginLeft="168dp"
+                    android:fontFamily="@font/montserratlightxml"
+                    android:textSize="12dp"/>
+            </LinearLayout>
+            <ProgressBar
+                android:id="@+id/pb2"
+                android:layout_width="267dp"
+                android:layout_height="23dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:max="10"
+                android:progress="2"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

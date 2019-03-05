@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".quiz.QuizRules">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:background="@drawable/path1"
+        android:layout_marginLeft="-20dp"/>
+
+
+    <ImageView
+        android:layout_marginTop="-100dp"
+        android:layout_width="140dp"
+        android:layout_gravity="center"
+        android:layout_height="40dp"
+        android:background="@drawable/quizlogo"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_marginTop="80dp">
+
+    <com.github.florent37.shapeofview.shapes.CircleView
+        android:id="@+id/play"
+        android:layout_width="57.29dp"
+        android:layout_height="55.43dp"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/cricle"
+            android:src="@drawable/ic_play_arrow_white_24dp"/>
+
+    </com.github.florent37.shapeofview.shapes.CircleView>
+    <TextView
+        android:id="@+id/tplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratmediumxml"
+        android:text="Start Quiz Now"
+        android:layout_marginLeft="7dp"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+</LinearLayout>
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/rule1"
+        android:layout_gravity="center"
+        android:layout_width="330dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="30dp"
+        app:shape_roundRect_topRightRadius="27dp"
+        app:shape_roundRect_topLeftRadius="27dp"
+        app:shape_roundRect_bottomRightRadius="27dp"
+        app:shape_roundRect_bottomLeftRadius="27dp">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/ruleshape">
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/l2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Jawablah 10 pertanyaan yang tersedia setelah menginputkan nama anda"
+            android:textSize="12dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/montserratlightxml"
+            android:textColor="#fff"/>
+        </LinearLayout>
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+    <ImageView
+        android:layout_width="295dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="-70dp"
+        android:background="@drawable/circlebigtrans"
+        />
+
+    <ImageView
+        android:layout_width="294dp"
+        android:layout_height="261dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="-280dp"
+        android:background="@drawable/circlebigtrans"
+        />
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/rule2"
+        android:layout_gravity="center"
+        android:layout_width="330dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="-200dp"
+        app:shape_roundRect_topRightRadius="27dp"
+        app:shape_roundRect_topLeftRadius="27dp"
+        app:shape_roundRect_bottomRightRadius="27dp"
+        app:shape_roundRect_bottomLeftRadius="27dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/ruleshape">
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/l2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="pilih salah satu jawaban yang menurut anda paling benar"
+                android:textSize="12dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/montserratlightxml"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/rule3"
+        android:layout_gravity="center"
+        android:layout_width="330dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="12dp"
+        app:shape_roundRect_topRightRadius="27dp"
+        app:shape_roundRect_topLeftRadius="27dp"
+        app:shape_roundRect_bottomRightRadius="27dp"
+        app:shape_roundRect_bottomLeftRadius="27dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/ruleshape">
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/l2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Bacalah soal dan jawaban dengan teliti sebelum menjawab soal"
+                android:textSize="12dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/montserratlightxml"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/rule4"
+        android:layout_gravity="center"
+        android:layout_width="330dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="12dp"
+        app:shape_roundRect_topRightRadius="27dp"
+        app:shape_roundRect_topLeftRadius="27dp"
+        app:shape_roundRect_bottomRightRadius="27dp"
+        app:shape_roundRect_bottomLeftRadius="27dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/ruleshape">
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/l2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Jawaban yang benar dan yang salah akan diakumulasikan dan ditampilkan setelh quiz usai"
+                android:textSize="12dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/montserratlightxml"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+</LinearLayout>
